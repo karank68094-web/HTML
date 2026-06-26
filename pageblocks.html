@@ -1,51 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> 
-    <style>
-     .container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-        background-color: rgb(192, 187, 187);
-        height: 300px;
-        border-radius: 20px;
-       
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopping Style Profile Card</title>
 
-     }
-.h{
-    
-    background-color: rgb(177, 187, 157);
-    width:1000px;
-    height: 35px;
-     border-radius: 10px;
-     align-content: center;
-     
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
 
+body{
+    background:#e9ebee;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
 
+.container{
+    width:420px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 0 20px rgba(0,0,0,.3);
+}
 
+/* Top Menu */
+.top{
+    display:flex;
+    justify-content:space-between;
+    padding:15px;
+    background:#80ec0d;
+}
 
+.top a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+}
 
+/* Cover Photo */
+.cover img{
+    width:100%;
+    height:170px;
+    object-fit:cover;
+}
 
+/* Profile Photo */
+.profile{
+    text-align:center;
+    margin-top:-70px;
+}
 
+.profile img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    border:5px solid white;
+    object-fit:cover;
+}
 
-    </style>
+/* Name */
+.name{
+    text-align:center;
+    margin-top:10px;
+}
+
+.name h2{
+    color:#222;
+}
+
+.name p{
+    color:gray;
+    margin-top:5px;
+}
+
+/* Information */
+.info{
+    margin:25px;
+}
+
+.info p{
+    font-size:18px;
+    margin:15px 0;
+}
+
+/* Buttons */
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+button{
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    background:#0a43c9;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#e2ea08;
+}
+
+</style>
+
 </head>
 <body>
-<div class="container">
-<div class="h">kishan</div>
-<div class="h">kishan2</div>
-<div class="h">kishan3</div>
-<div class="h">kishab bhai</div>
 
-    
+<div class="container">
+
+    <!-- Top Links -->
+    <div class="top">
+        <a href="shoping.html">🛒 Shopping</a>
+
+        <a href="https://wa.me/?text=Visit My Profile">
+            📱 WhatsApp
+        </a>
+    </div>
+
+    <!-- Cover Photo -->
+    <div class="cover">
+        <img src="pic/cover.jpg" alt="Cover">
+    </div>
+
+    <!-- Profile Photo -->
+    <div class="profile">
+        <img src="pic/photo1.jpg" alt="Profile">
+    </div>
+
+    <!-- Name -->
+    <div class="name">
+        <h2>KARAN BIND</h2>
+        <p>BCA Student | HTML/CSS</p>
+    </div>
+
+    <!-- Information -->
+    <div class="info">
+        <p>📧 karanbind123@gmail.com</p>
+        <p>📞 +91 9876543210</p>
+        <p>📍 Varanasi, Uttar Pradesh, India</p>
+    </div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+        <button>Follow</button>
+        <button>Contact</button>
+        <button>Share</button>
+    </div>
+
 </div>
-    
+
 </body>
 </html>
